@@ -12,6 +12,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && bash deploy.sh"
+    "deploy": "npm run build && bash deploy.sh",
+    "flow": "flow"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.61.0",
+    "flow-remove-types": "^1.2.3"
   }
 }
