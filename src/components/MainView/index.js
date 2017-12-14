@@ -1,10 +1,18 @@
 /* @flow */
 import React, { Component } from 'react';
 
-class MainView extends Component<*,*> {
+import './styles/index.css';
+
+type Props = {
+  identifier: string, 
+}
+
+class MainView extends Component<Props,*> {
   render() {
     return (
-      <div>Hello</div>
+      <div className="mainview-container-style">
+        
+      </div>
     );
   }
 }

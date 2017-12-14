@@ -5,17 +5,25 @@ import './App.css';
 import MainView from './components/MainView'
 import Sidebar from './components/Sidebar'
 
-class App extends Component<*,*> {
+type State = {
+  identifier: string, 
+}
+
+class App extends Component<*,State> {
+  state = {
+    identifier: '',
+  }
   
   selectedOption = (identifier: string) => () => {
-    alert('Clicked '+identifier);
+    this.setState({identifier: identifier});
   }
 
   render() {
+    const { identifier } = this.state; 
     return (
       <div className="app-layout">
         <Sidebar selected={this.selectedOption}/>
-        {/* <MainView /> */}
+        <MainView identifier={identifier}/>
       </div>
     );
   }

@@ -1,10 +1,10 @@
 /* @flow */
 import React, { Component } from 'react';
 
-import './index.css';
-import './profile.css';
-import './options.css';
-import './contact.css';
+import './styles/index.css';
+import './styles/profile.css';
+import './styles/options.css';
+import './styles/contact.css';
 import CONSTANTS from '../../constants.js';
 
 const Option = (props: Object) => {
