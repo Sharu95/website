@@ -6,10 +6,15 @@ import MainView from './components/MainView'
 import Sidebar from './components/Sidebar'
 
 class App extends Component<*,*> {
+  
+  selectedOption = (identifier: string) => () => {
+    alert('Clicked '+identifier);
+  }
+
   render() {
     return (
       <div className="app-layout">
-        <Sidebar />
+        <Sidebar selected={this.selectedOption}/>
         {/* <MainView /> */}
       </div>
     );

@@ -1,0 +1,18 @@
+.sidebar-options-contact-container {
+    display: flex;
+    align-items: center;
+    padding: 0 25px 0 25px;
+    justify-content: space-between;
+    height: 20%;
+}
+
+.sidebar-option-contact-item {
+    padding: 0.5rem 0.65rem 0.5rem 0.65rem;
+    border-radius: 100%;
+    color: white;
+    /* transition: color 0.3s ease-in-out; */
+}
+
+.sidebar-option-contact-item:hover {
+    background: linear-gradient(top right, #FF5C00 10%, #FFC159 100%);;
+}

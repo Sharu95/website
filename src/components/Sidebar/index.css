@@ -4,7 +4,7 @@
 
 .sidebar-style {
     background-color: rgba(0,0,0,0.4);
-    height: inherit;
+    height: 100%;
     width: 20%;
 }
 
@@ -16,9 +16,5 @@
 @media screen and (max-width: 768px) {
     .sidebar-style {
         width: 100%;
-    }
-
-    .sidebar-options {
-        display: none;
     }
 }
