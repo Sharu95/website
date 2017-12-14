@@ -5,7 +5,7 @@ import './styles/index.css';
 import './styles/profile.css';
 import './styles/options.css';
 import './styles/contact.css';
-import CONSTANTS from '../../constants.js';
+import { CONSTANTS, CATEGORIES } from '../../constants.js';
 
 const Option = (props: Object) => {
   return(
@@ -40,16 +40,16 @@ class Sidebar extends Component<Props,*> {
         <div className="sidebar-split"/>
         
         <div className="sidebar-options-container">
-          <Option selected={this.props.selected('projects')} title="Projects" />
-          <Option selected={this.props.selected('blog')} title="Blog" />
-          <Option selected={this.props.selected('about')} title="About me" />
+          <Option selected={this.props.selected(CATEGORIES.PROJECTS)} title="Projects" />
+          <Option selected={this.props.selected(CATEGORIES.BLOG)} title="Blog" />
+          <Option selected={this.props.selected(CATEGORIES.ABOUT)} title="About me" />
         </div>
 
         <div className="sidebar-options-contact-container">
           <LinkOption link={CONSTANTS.LINKEDIN} icon="fa-linkedin" />
           <LinkOption link={CONSTANTS.GITHUB} icon="fa-github" />
-          <LinkOption link={CONSTANTS.EMAIL} icon="fa-envelope" />
           <LinkOption link={CONSTANTS.TWITTER} icon="fa-twitter" />
+          <LinkOption link={CONSTANTS.EMAIL} icon="fa-envelope" />
         </div>
 
       </div>

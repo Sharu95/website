@@ -2,8 +2,9 @@
 import React, { Component } from 'react';
 
 import './App.css';
-import MainView from './components/MainView'
-import Sidebar from './components/Sidebar'
+import MainView from './components/MainView';
+import Sidebar from './components/Sidebar';
+import { CONSTANTS } from './constants';
 
 type State = {
   identifier: string, 
@@ -11,7 +12,7 @@ type State = {
 
 class App extends Component<*,State> {
   state = {
-    identifier: '',
+    identifier: CONSTANTS.DEFAULT_LANDING,
   }
   
   selectedOption = (identifier: string) => () => {
