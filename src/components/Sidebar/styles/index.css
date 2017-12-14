@@ -17,4 +17,35 @@
     .sidebar-style {
         width: 100%;
     }
+
+    .sidebar-menu {
+        cursor: pointer;
+        margin: 10px;
+        float: right;
+        border: 1px solid white;
+        border-radius: 0.3rem;
+        height: 30px;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        padding: 0 12px 0 12px;
+    }
+
+    .menu-dot {
+        width: 2px;
+        height: 2px;
+        border: 1px solid white;
+        border-radius: 100%;
+        background-color: white;
+        margin: 0 1.5px 0 1.5px;
+    }
+}
+
+@media screen 
+    and (min-width: 426px)
+    and (max-width: 768px) {
+
+    .sidebar-split {
+        margin: 0 170px 0 170px;
+    }
 }

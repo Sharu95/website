@@ -21,17 +21,44 @@ const LinkOption = (props: Object) => {
       <i class={`fa fa-2x `+props.icon} aria-hidden="true"></i> 
     </a>
   );
-}
+};
+
+const Menu = (props: Object) => {
+  return(
+    ""
+  );
+};
 
 type Props = {
   selected: (identifier: string) => () => void
 } 
 
-class Sidebar extends Component<Props,*> {
+type State = {
+  menuOpened: boolean,
+}
+
+class Sidebar extends Component<Props, State> {
+  state = {
+    menuOpened: false,
+  }
+
+  openMenuSmallDevice = () => {
+    const newValue = this.state.menuOpened ? false : true;
+    this.setState({menuOpened: newValue});
+  }
+
   render() {
+    const { menuOpened } = this.state;
     return (
       <div className="sidebar-layout sidebar-style">
-        
+        <div onClick={this.openMenuSmallDevice} className="sidebar-menu">
+          <span className="menu-dot" />
+          <span className="menu-dot" />
+          <span className="menu-dot" />
+        </div>
+
+        { menuOpened && <Menu />}
+
         <div className="profile-container">
           <div className="profile-picture"></div>
           <p>Sharanan Kulam</p>
