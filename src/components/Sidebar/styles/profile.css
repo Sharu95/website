@@ -13,12 +13,12 @@
 }
 
 .profile-picture {
-    background-image: url('../../images/sharu.jpg');
+    background-image: url('../../../images/sharu.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 100%;
-    height: 200px;
-    width: 200px;
+    height: 190px;
+    width: 190px;
 }
 
 /* Tablets */
