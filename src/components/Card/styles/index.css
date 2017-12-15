@@ -1,4 +1,4 @@
-.card-header {
+.card-item {
     box-shadow: 0 .5em 1em rgba(0,0,0,0.25);
     background-size: cover;
     background-position: center;
@@ -10,13 +10,9 @@
     display: flex;
     flex-flow: row nowrap;
     overflow: hidden;
-    cursor: pointer;
 }
 
-.card-header:hover {
-}
-
-.card-header-title {
+.card-title {
     height: 40px;
     font-size: 1.7rem;
     font-family: 'raleway-light';
@@ -25,16 +21,20 @@
 
 .card-divider {
     border: 0.5px solid white;
-    margin: 10px 60px 0 0 ;
+    margin: 10px 100px 0 0 ;
 }
 
-.card-header-description {
+.card-description {
     padding: .7rem 0 0;
     font-size: 0.9rem;
-    font-family: 'raleway-light';
+    font-family: 'raleway-thin';
+
+    /* display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; */
 }
 
-.card-header-glass {
+.card-header {
     cursor: default; 
     align-self: flex-end;
     width: 100%;
@@ -46,8 +46,31 @@
     transition: transform 0.5s;
 }
 
-.card-header-title:hover {
+.card-title:hover {
     transform: translateY(10px) translateZ(0);
+}
+
+.card-buttons {
+    /* margin-top: 20px; */
+    background-color: red;
+    width: 90%;
+    margin-top: 10px;
+}
+
+.card-button {
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 0.2rem;
+    padding: 8px;
+    margin: 5px 5px 5px 0;
+    float: left;
+    font-family: 'raleway-light';
+    transition: background-color .5s, color .5s;
+}
+
+.card-button:hover {
+    background-color: white;
+    color: black;
 }
 
 /* 4K! */

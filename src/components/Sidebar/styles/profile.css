@@ -45,17 +45,17 @@
     }
 }
 
-/* 4K's! */
+/* Larger screen */
 @media screen 
     and (min-width: 1440px) {
 
     .profile-container {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .profile-picture {
-        height: 400px;
-        width: 400px; 
+        height: 250px;
+        width: 250px; 
     }
 
 }

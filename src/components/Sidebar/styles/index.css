@@ -41,3 +41,12 @@
         margin: 0 170px 0 170px;
     }
 }
+
+/* Bigger screen */
+@media screen 
+    and (min-width: 1440px) {
+
+    .sidebar-style {
+        width: 15%;
+    }
+}

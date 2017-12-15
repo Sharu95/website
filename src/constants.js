@@ -16,7 +16,7 @@ export const CONSTANTS = {
 export type Project = {
     title: string,
     description: string,
-    image?: string,
+    image: string,
     demo: string,
     source: string, 
 }
@@ -24,14 +24,14 @@ export type Project = {
 export const PROJECTS: Array<Project> = [
     {
         title: "Currencies",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        description: "One of my first React projects, where I wanted to learn more about React, how to use it, its styles and generally the framework itself.",
         image: "https://github.com/Sharu95/currencies/raw/master/img/README_1.png",
         demo: "https://sharu95.github.io/currencies/",
         source: "https://github.com/Sharu95/currencies",
     },
     {
         title: "Kithe",
-        description: "Lorem Ipsum is simply dummy text oprinter took a galley of type and scrambled it to make a type specimen book.",
+        description: "We were a group of students who attended a hackathon. The theme was related to travel, and the idea was to create a solution which encouraged people to travel more.",
         image: "https://riat.io/img/portfolio/kithe-landing.png",
         demo: "https://riat.io/kithe_app.html",
         source: "https://github.com/Sharu95/Kithe",

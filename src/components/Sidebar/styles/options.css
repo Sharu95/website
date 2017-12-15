@@ -29,13 +29,13 @@
     }
 }
 
-/* 4K's! */
+/* Bigger screen */
 @media screen 
     and (min-width: 1440px) {
 
     .sidebar-option {
-        font-size: 2.5rem;
-        height: 120px; 
+        font-size: 1.7rem;
+        height: 70px;
+        padding: 5px 0 5px 10px;
     }
-
 }
