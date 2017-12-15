@@ -23,31 +23,17 @@ export type Project = {
 
 export const PROJECTS: Array<Project> = [
     {
-        title: "Title 1",
+        title: "Currencies",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        image: "https://raw.githubusercontent.com/Sharu95/currencies/master/img/README_4.png",
+        image: "https://github.com/Sharu95/currencies/raw/master/img/README_1.png",
         demo: "https://sharu95.github.io/currencies/",
         source: "https://github.com/Sharu95/currencies",
     },
     {
-        title: "Title 2",
+        title: "Kithe",
         description: "Lorem Ipsum is simply dummy text oprinter took a galley of type and scrambled it to make a type specimen book.",
-        image: "https://raw.githubusercontent.com/Sharu95/currencies/master/img/README_4.png",
-        demo: "https://sharu95.github.io/currencies/",
-        source: "https://github.com/Sharu95/currencies",
-    },
-    {
-        title: "Title 3",
-        description: "Lorem um has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        image: "https://raw.githubusercontent.com/Sharu95/currencies/master/img/README_4.png",
-        demo: "https://sharu95.github.io/currencies/",
-        source: "https://github.com/Sharu95/currencies",
-    },
-    {
-        title: "Title 4",
-        description: "Lorem Ipsum is sim standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        image: "https://raw.githubusercontent.com/Sharu95/currencies/master/img/README_4.png",
-        demo: "https://sharu95.github.io/currencies/",
-        source: "https://github.com/Sharu95/currencies",
+        image: "https://riat.io/img/portfolio/kithe-landing.png",
+        demo: "https://riat.io/kithe_app.html",
+        source: "https://github.com/Sharu95/Kithe",
     },
 ]

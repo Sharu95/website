@@ -9,23 +9,34 @@ type Props = {
 };
 
 class Card extends Component<*, *> {
-  render() {
+	
+	openLink = (link: string) => () => {
+		window.open(link);
+	}
+
+	render() {
 		console.log('Project', this.props.content);
-		const animation = {
+		const styles = {
 			animation: "slideInRight 0.8s",
+			backgroundImage: `url(${this.props.content.image})`
 		};
 
     return (
-			<div className="card-item" style={animation}>
-				<div className="card-title"> {this.props.content.title} </div>
-				<div className="card-divider" />
-					<div className="card-description"> {this.props.content.description} </div>
-					
-					{/* <section className="card-buttons"> */}
-						{/* b1 b2 */}
-						{/* <span className="button view-source"> View source </span>
-						<span className="button view-demo"> Demo </span> */}
-					{/* </section> */}
+			// <div className="card-item" style={animation}>
+				<div onClick={this.openLink(this.props.content.demo)} className="card-header" style={styles}>
+					<div className="card-header-title card-header-glass"> 
+						<span> {this.props.content.title} </span>
+						<div className="card-divider" />
+						<section className="card-header-description">
+							{this.props.content.description}
+						</section>
+					</div>
+
+
+					{/* <section className="card-buttons">
+						<span className="button view-source"> View source </span>
+						<span className="button view-demo"> Demo </span>
+					</section> */}
 
 			</div>
     );
