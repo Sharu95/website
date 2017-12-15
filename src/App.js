@@ -21,6 +21,9 @@ class App extends Component<*,State> {
 
   render() {
     const { identifier } = this.state; 
+    
+    console.log('process.env', );
+    
     return (
       <div className="app-layout">
         <Sidebar selected={this.selectedOption}/>
