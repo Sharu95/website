@@ -2,7 +2,8 @@
     /* Source https://www.flickr.com/photos/phiiiliiipp/25321136550/in/photolist-EzxrHQ-9wHD2E-bk5gWJ-bxwhyv-czyx5W-HmULC8-ePusVC-dKvgME-KmeAoo-icn3ZQ-hE8bH7-CgkjAN-KBeUSA-czta6Q-9PboQ8-qXGmBr-JRFDYv-cEvoiN-RiemXS-UPUa67-QTPMbo-KNZ4wS-fjUL52-d2z3XG-pfxa81-o5971-Wwifkj-phLzcg-ckve2o-MhQx4y-mCRCu2-hcraUQ-cPM31Q-avuqS8-puwRzc-Pswa6f-RPdSks-8SChoQ-h1JdAT-SHtk3w-FoUZTm-osaFKr-arBEQt-8DwDPY-9ExLPB-am9icv-Cg6MMm-ntKBrG-sERAwE-q29Br9 
     Image belongs to: Philipp Häfeli; https://www.flickr.com/photos/phiiiliiipp/ */
     background-image: url('./images/background.jpg');
-    /* background-image: url('https://images.pexels.com/photos/314380/pexels-photo-314380.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb'); */
+    background-image: url('https://images.pexels.com/photos/314380/pexels-photo-314380.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb');
+    background-image: url('./images/background_2.jpg');
     background-size: cover;
     height: 100vh;
     overflow: hidden;
