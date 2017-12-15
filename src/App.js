@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import './App.css';
 import MainView from './components/MainView';
 import Sidebar from './components/Sidebar';
-import { CONSTANTS } from './constants';
+import { CONSTANTS, ROOT } from './constants';
 
 type State = {
   identifier: string, 
@@ -21,9 +21,9 @@ class App extends Component<*,State> {
 
   render() {
     const { identifier } = this.state; 
-    
-    console.log('process.env', );
-    
+  
+    console.log('APP ROOT FETCH', ROOT);
+
     return (
       <div className="app-layout">
         <Sidebar selected={this.selectedOption}/>

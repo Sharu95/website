@@ -14,7 +14,7 @@
 }
 
 .profile-picture {
-    background-image: url('../../../images/sharu.jpg');
+    background-image: url('/images/sharu.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 100%;

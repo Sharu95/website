@@ -7,7 +7,7 @@ import './styles/options.css';
 import './styles/contact.css';
 import './styles/menu.css';
 
-import { CONSTANTS, CATEGORIES } from '../../constants.js';
+import { CONSTANTS, CATEGORIES, ROOT } from '../../constants.js';
 
 const Option = (props: Object) => {
   return(
@@ -61,6 +61,7 @@ class Sidebar extends Component<Props, State> {
 			animation: "slideInLeft 0.8s",
     };
     
+    console.log("SIDEBAR ROOT", ROOT); 
     return (
       <div className="sidebar-style" style={animation}>
         <div onClick={this.openMenuSmallDevice} className="sidebar-menu-button">
@@ -73,7 +74,7 @@ class Sidebar extends Component<Props, State> {
 
         {/* <div className="show-sidebar hide-sidebar"> */}
           <div className="profile-container">
-            <div className="profile-picture"></div>
+            <div className="profile-picture" />
             <p>Sharanan Kulam</p>
           </div>
           
