@@ -57,8 +57,12 @@ class Sidebar extends Component<Props, State> {
   render() {
     const { menuOpened } = this.state;
     
+    const animation = {
+			animation: "slideInLeft 0.8s",
+    };
+    
     return (
-      <div className="sidebar-style">
+      <div className="sidebar-style" style={animation}>
         <div onClick={this.openMenuSmallDevice} className="sidebar-menu-button">
           <span className="menu-dot" />
           <span className="menu-dot" />

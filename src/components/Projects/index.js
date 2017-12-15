@@ -8,15 +8,20 @@ import Card from '../Card';
 class Projects extends Component<*, *> {
   
   populateCards = () => {
-    return PROJECTS.map( (project: Project, i: number) => (
-      <Card key={i} content={project} />
-    ));    
+    let delay = 0;
+
+    return PROJECTS.map( (project: Project, i: number) => {
+      delay += 0.2;
+      return (
+        <Card key={i} content={project} delay={delay}/>
+      )
+    });    
   }
 
   render() {
     return (
       <div className="project-view">
-        {this.populateCards()}
+        { this.populateCards() }
       </div>
     );
   }
