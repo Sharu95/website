@@ -27,6 +27,13 @@ console.log('CONSTANTS ROOT FETCH', ROOT+"/images/currencies.jpg");
 
 export const PROJECTS: Array<Project> = [
     {
+        title: "Github website",
+        description: "Diving further into react, to be able to understand the technical aspects of the framework, and lifecycles. After this, I think Redux would be good to look at.",
+        image: "/images/website.jpg",
+        demo: "/",
+        source: "https://github.com/Sharu95/website",
+    },
+    {
         title: "Currencies",
         description: "One of my first React projects, where I wanted to learn more about React, how to use it, its styles and generally the framework itself.",
         image: "/images/currencies.jpg",

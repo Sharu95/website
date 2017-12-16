@@ -11,7 +11,12 @@ type Props = {
 class Card extends Component<Props, *> {
 
 	openLink = (link: string) => () => {
-		window.open(link);
+		if (link !== "/") {
+			window.open(link);
+		}
+		else {
+			window.location.reload(true);
+		}
 	}
 
 	render() {
