@@ -27,8 +27,7 @@
     .sidebar-dropdown-menu {
         height: 100%;
         width: 100vw;
-        margin: 0 -1rem 0 -1rem;  
-        /* If parent container used */
+        margin: 0 -1rem 0 -1rem;   /* If parent container used */
         background: linear-gradient(to bottom, rgba(0,0,0,0.8),rgba(0,0,0,0.4));
     }
 }

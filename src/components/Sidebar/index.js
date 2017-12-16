@@ -12,7 +12,26 @@ import { CONSTANTS, CATEGORIES } from "../../constants.js";
 const Option = (props: Object) => {
   return (
     <div onClick={props.selected} className="sidebar-option">
-      <p id="sidebar-option-text"> {props.title} </p>
+      <p> {props.title} </p>
+    </div>
+  );
+};
+
+const Categories = (props: Object) => {
+  return(
+   <div>
+      <Option
+        selected={props.selected(CATEGORIES.PROJECTS)}
+        title="Projects"
+      />
+      <Option
+        selected={props.selected(CATEGORIES.BLOG)}
+        title="Blog"
+      />
+      <Option
+        selected={props.selected(CATEGORIES.ABOUT)}
+        title="About Me"
+      />
     </div>
   );
 };
@@ -25,17 +44,12 @@ const LinkOption = (props: Object) => {
   );
 };
 
-const Menu = (props: Object) => {
-  let styles = {};
-
-  styles = {
-    animation: "slideInDown .8s"
-  };
-
+const MobileMenu = (props: Object) => {
   return (
     <div className={`sidebar-dropdown-menu`}>
       <span onClick={props.closeMenu}>
         <svg
+          style={{margin: "10px"}}
           fill="#FFFFFF"
           height="40"
           viewBox="0 0 24 24"
@@ -45,6 +59,7 @@ const Menu = (props: Object) => {
           <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
           <path d="M0 0h24v24H0z" fill="none" />
         </svg>
+        <Categories selected={props.selected}/>
       </span>
     </div>
   );
@@ -73,11 +88,16 @@ class Sidebar extends Component<Props, State> {
       ? { transform: "translateY(0)" }
       : { transform: "translateY(-100%)" };
 
+    const visibility = menuOpened ? { opacity: "0.25" } : {};
+
     return (
       <div className="menu-container" style={showMenu}>
-        <Menu closeMenu={this.handleMenuSmallDevice(false)} />
+        <MobileMenu 
+          closeMenu={this.handleMenuSmallDevice(false)} 
+          selected={this.props.selected}
+        />
 
-        <div className={`sidebar-style`}>
+        <div className="sidebar-style" style={visibility}>
           <div
             onClick={this.handleMenuSmallDevice(true)}
             className="sidebar-menu-button">
@@ -94,18 +114,7 @@ class Sidebar extends Component<Props, State> {
           <div className="sidebar-split" />
 
           <div className="sidebar-options-container">
-            <Option
-              selected={this.props.selected(CATEGORIES.PROJECTS)}
-              title="Projects"
-            />
-            <Option
-              selected={this.props.selected(CATEGORIES.BLOG)}
-              title="Blog"
-            />
-            <Option
-              selected={this.props.selected(CATEGORIES.ABOUT)}
-              title="About me"
-            />
+            <Categories selected={this.props.selected}/>
           </div>
 
           <div className="sidebar-options-contact-container">

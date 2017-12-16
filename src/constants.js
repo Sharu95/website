@@ -1,5 +1,5 @@
 /* @flow */
-export const CATEGORIES ={
+export const CATEGORIES = {
     PROJECTS: 'projects',
     BLOG: 'blog',
     ABOUT: 'about',
