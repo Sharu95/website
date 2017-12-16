@@ -9,7 +9,6 @@
 }
 
 .sidebar-option {
-    cursor: pointer;
     padding: 0 0 0 10px;
     width: auto;
     height: 60px;
@@ -34,7 +33,7 @@
     and (min-width: 1440px) {
 
     .sidebar-option {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         height: 70px;
         padding: 5px 0 5px 10px;
     }
