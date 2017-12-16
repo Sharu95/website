@@ -2,7 +2,7 @@
     background-image: url('/images/background_2.jpg');
     background-size: cover;
     height: 100vh;
-    overflow: hidden;
+    overflow: hidden;         /* If parent container used, disable this */
     display: flex;
     flex-flow: row nowrap;
 }
