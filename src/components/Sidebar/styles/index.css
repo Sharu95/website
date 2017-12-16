@@ -1,7 +1,7 @@
 .sidebar-style {
     background-color: rgba(0,0,0,0.4);
     height: 100%;
-    width: 20%;
+    padding: 0 1rem 0 1rem;
 }
 
 .sidebar-split {
@@ -25,28 +25,10 @@
 }
 
 @media screen 
-    and (min-width: 770px)    
-    and (max-width: 1024px) {
-    .sidebar-style {
-        width: 25%;
-    }
-}
-
-
-@media screen 
     and (min-width: 426px)
     and (max-width: 768px) {
 
     .sidebar-split {
         margin: 0 170px 0 170px;
-    }
-}
-
-/* Bigger screen */
-@media screen 
-    and (min-width: 1440px) {
-
-    .sidebar-style {
-        width: 15%;
     }
 }
