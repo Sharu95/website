@@ -22,23 +22,13 @@
 .card-title {
     height: 40px;
     font-size: 1.7rem;
-    font-family: 'raleway-light';
+    font-family: 'raleway-thin';
     padding: .7rem 0 0 .7rem;
 }
 
-.card-divider {
-    border: 0.5px solid white;
-    margin: 10px 100px 0 0 ;
-}
-
 .card-description {
-    padding: .7rem 0 0;
     font-size: 0.9rem;
     font-family: 'raleway-thin';
-
-    /* display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between; */
 }
 
 .card-header {
@@ -51,6 +41,9 @@
     background-color: rgba(0,0,0, 0.8);
     transform: translateY(160px) translateZ(0);
     transition: transform 0.5s;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .card-title:hover {
@@ -59,7 +52,6 @@
 
 .card-buttons {
     /* margin-top: 20px; */
-    background-color: red;
     width: 90%;
     margin-top: 10px;
 }
@@ -83,6 +75,7 @@
 .card-tag {
     font-size: 0.7rem;
     float: right;
+    max-height: 15px;
     border: 1px solid white; 
     padding: 5px;
     margin-right: 10px;
@@ -106,6 +99,7 @@
     .card-header {
         height: 270px;
         transform: translateY(230px) translateZ(0);
+        display: inline;
     }
 
     .card-title:hover {

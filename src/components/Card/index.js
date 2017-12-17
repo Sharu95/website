@@ -35,7 +35,6 @@ class Card extends Component<Props, *> {
         <div className="card-title card-header">
           <span> {this.props.content.title} </span>
           <span className="card-tag"> {this.props.content.tag} </span>
-          <div className="card-divider" />
           <section className="card-description">
             {this.props.content.description}
 
