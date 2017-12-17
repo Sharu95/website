@@ -6,3 +6,7 @@
     display: flex;
     flex-flow: row nowrap;
 }
+
+.sidebar-and-view {
+    display: flex;
+}

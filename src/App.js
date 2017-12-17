@@ -7,27 +7,55 @@ import Sidebar from './components/Sidebar';
 import { CONSTANTS, ROOT } from './constants';
 
 type State = {
-  identifier: string, 
+  identifier: string,
+  device: string, 
 }
 
 class App extends Component<*,State> {
-  state = {
-    identifier: CONSTANTS.DEFAULT_LANDING,
-  }
+  // state = {
+  //   identifier: CONSTANTS.DEFAULT_LANDING,
+  // }
   
+  constructor(props: Object) {
+    super(props);
+    const width = window.innerWidth;
+    const defaultState = {
+      identifier: CONSTANTS.DEFAULT_LANDING,
+      device: "",
+    }
+
+    console.log('width of window', width);
+    
+    if (width <= 768) {
+      defaultState.identifier = "front";
+      defaultState.device = "mobile";
+    }
+
+    this.state = defaultState;
+  }
+
   selectedOption = (identifier: string) => () => {
     this.setState({identifier: identifier});
   }
 
-  render() {
-    const { identifier } = this.state; 
-  
-    console.log('APP ROOT FETCH', ROOT);
-
-    return (
-      <div className="app-layout">
+  populateUserView = (identifier: string) => {
+    return(
+      <div className="sidebar-and-view">
         <Sidebar selected={this.selectedOption}/>
         <MainView identifier={identifier}/>
+      </div>
+    );
+  }
+
+  render() {
+    const { identifier, device } = this.state; 
+
+    console.log(identifier, device);
+    return(
+      <div className="app-layout">
+        { device === "mobile" && identifier === "front" && <Sidebar selected={this.selectedOption}/> }
+        { device === "" && identifier !== "front" && this.populateUserView(identifier) }
+        { device === "mobile" && <MainView identifier={identifier}/> }
       </div>
     );
   }
