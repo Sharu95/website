@@ -45,7 +45,7 @@ export const PROJECTS: Array<Project> = [
     },
     {
         title: "Kithe",
-        description: "We were a group of students who attended a hackathon. The theme was related to travel, and the idea was to create a solution which encouraged people to travel more.",
+        description: "We were a group of students who attended a hackathon. The idea was to create a solution which encouraged people to travel more.",
         image: "/images/kithe.png",
         demo: "https://riat.io/kithe_app.html",
         source: "https://github.com/Sharu95/Kithe",
