@@ -13,6 +13,7 @@ const Option = (props: Object) => {
   return (
     <div onClick={props.selected} className="sidebar-option">
       <p> {props.title} </p>
+      <div className="sidebar-mobile-divider" />
     </div>
   );
 };
@@ -88,8 +89,6 @@ class Sidebar extends Component<Props, State> {
       ? { transform: "translateY(0)" }
       : { transform: "translateY(-100%)" };
 
-    const visibility = menuOpened ? { opacity: "0.25" } : {};
-
     return (
       <div className="menu-container" style={showMenu}>
         <MobileMenu 
@@ -97,7 +96,7 @@ class Sidebar extends Component<Props, State> {
           selected={this.props.selected}
         />
 
-        <div className="sidebar-style" style={visibility}>
+        <div className="sidebar-style">
           <div
             onClick={this.handleMenuSmallDevice(true)}
             className="sidebar-menu-button">

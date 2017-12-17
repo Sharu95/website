@@ -6,7 +6,6 @@
 
 .sidebar-option {
     cursor: default;
-    height: 60px;
     padding: 5px 0 5px 1rem;
     margin: 0 -1rem 0 -1rem;
     font-family: 'Raleway-thin';
@@ -26,9 +25,13 @@
     }
 
     .sidebar-option {
-        padding-left: 2rem;
-        height: 70px;
+        padding: 0 2rem 0 2rem;
         font-size: 1.5rem;
+    }
+
+    .sidebar-mobile-divider {
+        border: .5px solid white;
+        margin: 0 0 0 0;
     }
 }
 
