@@ -22,13 +22,13 @@
 .card-title {
     height: 40px;
     font-size: 1.7rem;
-    font-family: 'raleway-thin';
+    font-weight: 100;
     padding: .7rem 0 0 .7rem;
 }
 
 .card-description {
     font-size: 0.9rem;
-    font-family: 'raleway-thin';
+    font-weight: 300;
 }
 
 .card-header {
@@ -63,7 +63,7 @@
     padding: 8px;
     margin: 5px 5px 5px 0;
     float: left;
-    font-family: 'raleway-light';
+    font-weight: 300;
     transition: background-color .5s, color .5s;
 }
 
@@ -99,7 +99,7 @@
     .card-header {
         height: 270px;
         transform: translateY(230px) translateZ(0);
-        display: inline;
+        display: inline-block;
     }
 
     .card-title:hover {
