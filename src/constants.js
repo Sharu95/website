@@ -60,3 +60,13 @@ export const PROJECTS: Array<Project> = [
         tag: "Javascript",
     },
 ];
+
+export const ABOUT_ME = {
+    TITLE: "Student, Software Engineer & thinker",
+    DESCRIPTION: 
+        "This is a message \
+        ksdfjd what about meee? yes yes \
+        because im doing that",
+    TECH_SKILLS: 
+        ["Java", "C", "Python", "Javascript", "Functional Programming" ],
+}

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 import './styles/index.css';
 import Projects from '../Projects';
-
+import About from '../About';
 import { CATEGORIES } from '../../constants';
 
 type Props = {
@@ -31,7 +31,7 @@ class MainView extends Component<Props,State> {
       <div className="mainview-container-style">
         {this.props.identifier === CATEGORIES.PROJECTS && <Projects animate={!alreadyRendered} rendered={this.hasRenderedCallback} />}
         {this.props.identifier === CATEGORIES.BLOG && this.props.identifier}
-        {this.props.identifier === CATEGORIES.ABOUT && this.props.identifier}
+        {this.props.identifier === CATEGORIES.ABOUT && <About />}
       </div>
     );
   }

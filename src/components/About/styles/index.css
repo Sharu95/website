@@ -1,0 +1,16 @@
+.about-view {
+    width: 100%;
+    height: 95%;
+    overflow: auto;
+    background-color: red;
+    padding: 3rem 0 0 0;
+}
+
+/* @media screen and (max-width: 768px) { */
+    /* .about-view { */
+        /* display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-around; */
+    /* } */
+/* } */
