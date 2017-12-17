@@ -2,12 +2,21 @@
     background-image: url('/images/background_2.jpg');
     background-size: cover;
     height: 100vh;
-    overflow: hidden;         /* If parent container used, disable this */
+    overflow: hidden; 
     display: flex;
 }
 
 .sidebar-and-view {
     display: flex;
+    height: 100%;
+}
+
+.app-container {
+    height: 100%;
+}
+
+.app-view-container {
+    height: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -20,5 +29,9 @@
         height: 6%;
         width: 100%;
         background-color: rgba(0,0,0, 0.8);
+    }
+
+    .app-container {
+        transition: transform .5s;
     }
 }

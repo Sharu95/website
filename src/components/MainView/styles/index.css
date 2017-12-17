@@ -1,13 +1,6 @@
 .mainview-container-style {
     height: 100%;
-    width: 80%;
+    width: 90%;
     color: white;
     padding: 5px;
-}
-
-@media screen and (max-width: 1450px) {
-    .mainview-container-style {
-        height: 100%;
-        width: 100%;
-    }
 }

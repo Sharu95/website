@@ -2,9 +2,37 @@ import React, { Component } from "react";
 import { CATEGORIES } from "../../constants.js";
 import "./styles/index.css";
 
-export function Menu(props: Object) {
+const Option = (props: Object) => {
   return (
-    <div className={`sidebar-dropdown-menu`}>
+    <div onClick={props.selected} className="sidebar-option">
+      <p> {props.title} </p>
+      <div className="sidebar-mobile-divider" />
+    </div>
+  );
+};
+
+export function Categories (props: Object) {
+  return(
+   <div>
+      <Option
+        selected={props.selected(CATEGORIES.PROJECTS)}
+        title="Projects"
+      />
+      <Option
+        selected={props.selected(CATEGORIES.BLOG)}
+        title="Blog"
+      />
+      <Option
+        selected={props.selected(CATEGORIES.ABOUT)}
+        title="About Me"
+      />
+    </div>
+  );
+};
+
+export function MobileMenu(props: Object) {
+  return (
+    <div className={`dropdown-menu`}>
       <span onClick={props.closeMenu}>
         <svg
           style={{ margin: "10px" }}
@@ -17,8 +45,7 @@ export function Menu(props: Object) {
           <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
           <path d="M0 0h24v24H0z" fill="none" />
         </svg>
-        options
-        {/* <Categories selected={props.selected}/> */}
+        <Categories selected={props.selected}/>
       </span>
     </div>
   );
