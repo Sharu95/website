@@ -2,11 +2,12 @@
     height: 100%;
     width: 80%;
     color: white;
-    padding: 20px;
+    padding: 5px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1450px) {
     .mainview-container-style {
-        display: none;
+        height: 100%;
+        width: 100%;
     }
 }
