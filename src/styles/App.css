@@ -18,6 +18,7 @@
 
 .app-view-container {
     height: 100%;
+    overflow: auto;
 }
 
 @media screen and (max-width: 768px) {

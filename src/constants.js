@@ -64,9 +64,23 @@ export const PROJECTS: Array<Project> = [
 export const ABOUT_ME = {
     TITLE: "Student, Software Engineer & thinker",
     DESCRIPTION: 
-        "This is a message \
-        ksdfjd what about meee? yes yes \
-        because im doing that",
+        "Some description about that moi",
     TECH_SKILLS: 
-        ["Java", "C", "Python", "Javascript", "Functional Programming" ],
+        [ "Java", "C", "Python", "Javascript", "Functional Programming" ],
+    INTERESTS:
+        [ "AI", "Functional paradigm", "Hiking", "Design", "Web design", "Technology", "Reading"],
+    SPEAKS: [ 
+        {
+            "emoji": "🇳🇴",
+            "language": "Norwegian",
+        },
+        {
+            "emoji": "🇱🇰",
+            "language": "Tamil",
+        },
+        {
+            "emoji": "🇬🇧",
+            "language": "English",
+        },
+    ]
 }
