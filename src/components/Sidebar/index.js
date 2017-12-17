@@ -19,15 +19,12 @@ const LinkOption = (props: Object) => {
 
 type Props = {
   selected: (identifier: string) => () => void,
-  handler: (open: boolean) => () => void,
 };
 
 class Sidebar extends Component<Props, *> {
   render() {
     return (
       <div className="sidebar-style">
-        <MenuButton handler={this.props.handler(true)} />
-
         <div className="profile-container">
           <div className="profile-picture" />
           <p>Sharanan Kulam</p>

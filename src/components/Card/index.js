@@ -5,7 +5,8 @@ import "./styles/index.css";
 import { type Project } from "../../constants";
 
 type Props = {
-  content: Project
+	content: Project,
+	delay: number, 
 };
 
 class Card extends Component<Props, *> {
@@ -21,7 +22,8 @@ class Card extends Component<Props, *> {
 
 	render() {
 		const styles = {
-			animation: "slideInRight 0.8s",
+			animation: "slideInUp 0.8s",
+			animationDelay: `${this.props.delay}s`,
 			backgroundImage: `url(${this.props.content.image})`
 		};
 

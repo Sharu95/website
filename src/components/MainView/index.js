@@ -7,7 +7,7 @@ import Projects from '../Projects';
 import { CATEGORIES } from '../../constants';
 
 type Props = {
-  identifier: string, 
+  identifier?: string, 
 }
 
 class MainView extends Component<Props,*> {
