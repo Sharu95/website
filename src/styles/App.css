@@ -4,9 +4,21 @@
     height: 100vh;
     overflow: hidden;         /* If parent container used, disable this */
     display: flex;
-    flex-flow: row nowrap;
 }
 
 .sidebar-and-view {
     display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .app-layout {
+        flex-flow: row wrap;
+    }
+
+    .app-mobile-navbar {
+        height: 6%;
+        width: 100%;
+        background-color: rgba(0,0,0, 0.8);
+    }
 }

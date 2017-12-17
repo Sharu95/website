@@ -8,6 +8,7 @@ import "./styles/contact.css";
 import "./styles/menu.css";
 
 import { CONSTANTS, CATEGORIES } from "../../constants.js";
+import { MenuButton } from '../Menu';
 
 const Option = (props: Object) => {
   return (
@@ -97,13 +98,7 @@ class Sidebar extends Component<Props, State> {
         />
 
         <div className="sidebar-style">
-          <div
-            onClick={this.handleMenuSmallDevice(true)}
-            className="sidebar-menu-button">
-            <span className="menu-dot" />
-            <span className="menu-dot" />
-            <span className="menu-dot" />
-          </div>
+          <MenuButton handler={this.handleMenuSmallDevice(true)} />
 
           <div className="profile-container">
             <div className="profile-picture" />
