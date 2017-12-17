@@ -105,4 +105,8 @@
     .card-title:hover {
         transform: translateY(70px) translateZ(0);
     }
+
+    .card-description {
+        padding-top: .7rem;
+    }
 }
