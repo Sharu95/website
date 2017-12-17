@@ -89,3 +89,19 @@
         width: 600px;
     }
 } */
+
+@media screen and (max-width: 768px) {
+    .card-item {
+        height: 210px;
+        width: 270px;
+    }
+
+    .card-header {
+        height: 270px;
+        transform: translateY(230px) translateZ(0);
+    }
+
+    .card-title:hover {
+        transform: translateY(70px) translateZ(0);
+    }
+}
