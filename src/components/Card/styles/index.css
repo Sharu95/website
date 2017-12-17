@@ -1,3 +1,9 @@
+@keyframes slideUp {
+    100% {
+        margin: 10px;
+    }
+}
+
 .card-item {
     box-shadow: 0 .5em 1em rgba(0,0,0,0.25);
     background-size: cover;
@@ -5,11 +11,12 @@
     height: 200px;
     width: 300px;
     float: left;
-    margin: 10px;
+    margin: 100% 10px 10px 10px;
     border-radius: 0.3rem;
     display: flex;
     flex-flow: row nowrap;
     overflow: hidden;
+    animation: slideUp 1.2s forwards;
 }
 
 .card-title {
