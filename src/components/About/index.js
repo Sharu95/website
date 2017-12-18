@@ -32,7 +32,7 @@ const Languages = (props: Object) => {
 			<h2 className="about-title"> This guy speaks </h2>
 			{props.content.map( (lang, i) => (
 				<div key={i} className="about-tag">
-					<span className="tag-flag"> { lang.emoji } </span>
+					<span> { lang.emoji } </span>
 					<span> { lang.language } </span>
 				</div>
 			))}

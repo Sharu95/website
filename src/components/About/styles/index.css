@@ -4,6 +4,8 @@
     padding: 1rem 0 0 .4rem;
     display: flex;
     flex-flow: column nowrap;
+    overflow: scroll;
+
     /* margin: -5px; */
 }
 
@@ -17,12 +19,9 @@
     padding: 5px;
     border-radius: .3rem;
     background-color: white;
+    /* border: 1px solid white; */
     color: black;
     cursor: default;
-}
-
-.tag-flag {
-    font-size: 1.3rem;
 }
 
 .about-description {
@@ -33,10 +32,10 @@
     animation-delay: .5s; */
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .about-tag {
         background-color: transparent;
         border: 1px solid white;
         color: white;
     }
-}
+} */

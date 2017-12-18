@@ -1,6 +1,7 @@
 .project-view {
     width: 100%;
-    height: 95%;
+    height: 97%;
+    overflow: scroll;
 }
 
 @media screen and (max-width: 768px) {
@@ -14,6 +15,6 @@
 
 @media screen and (min-width: 1450px) {
     .project-view {
-        justify-content: space-between;         
+        justify-content: space-between;    
     }
 }

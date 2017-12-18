@@ -59,12 +59,68 @@ export const PROJECTS: Array<Project> = [
         source: "https://github.com/Sharu95/converter",
         tag: "Javascript",
     },
+    {
+        title: "Converter",
+        description: "One of my first web projects, just a simple converter. My intention was to learn about web development fundamentals.",
+        image: "/images/converter.jpg",
+        demo: "https://sharu95.github.io/converter",
+        source: "https://github.com/Sharu95/converter",
+        tag: "Javascript",
+    },
+    {
+        title: "Converter",
+        description: "One of my first web projects, just a simple converter. My intention was to learn about web development fundamentals.",
+        image: "/images/converter.jpg",
+        demo: "https://sharu95.github.io/converter",
+        source: "https://github.com/Sharu95/converter",
+        tag: "Javascript",
+    },
+    {
+        title: "Converter",
+        description: "One of my first web projects, just a simple converter. My intention was to learn about web development fundamentals.",
+        image: "/images/converter.jpg",
+        demo: "https://sharu95.github.io/converter",
+        source: "https://github.com/Sharu95/converter",
+        tag: "Javascript",
+    },
+    {
+        title: "Converter",
+        description: "One of my first web projects, just a simple converter. My intention was to learn about web development fundamentals.",
+        image: "/images/converter.jpg",
+        demo: "https://sharu95.github.io/converter",
+        source: "https://github.com/Sharu95/converter",
+        tag: "Javascript",
+    },
+    {
+        title: "Converter",
+        description: "One of my first web projects, just a simple converter. My intention was to learn about web development fundamentals.",
+        image: "/images/converter.jpg",
+        demo: "https://sharu95.github.io/converter",
+        source: "https://github.com/Sharu95/converter",
+        tag: "Javascript",
+    },
+    {
+        title: "Converter",
+        description: "One of my first web projects, just a simple converter. My intention was to learn about web development fundamentals.",
+        image: "/images/converter.jpg",
+        demo: "https://sharu95.github.io/converter",
+        source: "https://github.com/Sharu95/converter",
+        tag: "Javascript",
+    },
+    {
+        title: "Converter",
+        description: "One of my first web projects, just a simple converter. My intention was to learn about web development fundamentals.",
+        image: "/images/converter.jpg",
+        demo: "https://sharu95.github.io/converter",
+        source: "https://github.com/Sharu95/converter",
+        tag: "Javascript",
+    },
 ];
 
 export const ABOUT_ME = {
     TITLE: "Student, Software Engineer & thinker",
     DESCRIPTION: 
-        "Some description about that moi",
+        "Some description about that moiSome description about that moiSome description about that moiSome description about that moiSome description about that moiSome description about that moiSome description about that moiSome description about that moiSome description about that moiSome description about that moiSome description about that moiSome description about that moiSome description about that moiSome description about that moiSome description about that moiSome description about that moiSome description about that moiSome description about that moiSome description about that moiSome description about that moiSome description about that moi",
     TECH_SKILLS: 
         [ "Java", "C", "Python", "Javascript", "Functional Programming" ],
     INTERESTS:

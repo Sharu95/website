@@ -4,10 +4,3 @@
     color: white;
     padding: 5px;
 }
-
-@media screen and (max-width: 768px) {
-    .mainview-container-style {
-        padding-top: 50px;
-        height: 98%;
-    }
-}
