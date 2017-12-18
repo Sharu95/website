@@ -40,7 +40,6 @@ const Languages = (props: Object) => {
 	);
 }
 
-/* TODO: Fix scrolling navbar under menu button not over */
 class About extends Component<*, *> {
   render() {
     return (

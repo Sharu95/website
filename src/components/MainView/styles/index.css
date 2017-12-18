@@ -4,3 +4,9 @@
     color: white;
     padding: 5px;
 }
+
+@media screen and (max-width: 768px) {
+    .mainview-container-style {
+        height: 95%; /* Because navbar is now added on mobile. See App.css */
+    }
+}

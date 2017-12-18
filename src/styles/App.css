@@ -27,9 +27,7 @@
     }
 
     .app-mobile-navbar {
-        height: 100%;
-        position: absolute;
-        background-color: inherit;
+        height: 5%;
     }
     
     .app-container {
