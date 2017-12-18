@@ -3,7 +3,6 @@ import React, { Component } from "react";
 
 import "./styles/index.css";
 import "./styles/profile.css";
-import "./styles/options.css";
 import "./styles/contact.css";
 
 import { CONSTANTS, CATEGORIES } from "../../constants.js";

@@ -27,6 +27,8 @@
 .about-description {
     height: 100%;
     font-weight: 200;
+    padding: 3px;
+    word-wrap: break-word;
 
     /* animation: slideInUp 1s forwards;
     animation-delay: .5s; */

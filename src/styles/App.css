@@ -27,7 +27,10 @@
     }
 
     .app-mobile-navbar {
-        height: 5%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
     }
     
     .app-container {

@@ -4,9 +4,9 @@ import "./styles/index.css";
 
 const Option = (props: Object) => {
   return (
-    <div onClick={props.selected} className="sidebar-option">
+    <div onClick={props.selected} className="menu-option">
       <p> {props.title} </p>
-      <div className="sidebar-mobile-divider" />
+      <div className="option-mobile-divider" />
     </div>
   );
 };
@@ -53,7 +53,7 @@ export function MobileMenu(props: Object) {
 
 export function MenuButton(props: Object) {
   return (
-    <div onClick={props.handler} className="sidebar-menu-button">
+    <div onClick={props.handler} className="menu-button">
       <span className="menu-dot" />
       <span className="menu-dot" />
       <span className="menu-dot" />
