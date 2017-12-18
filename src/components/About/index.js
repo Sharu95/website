@@ -21,7 +21,13 @@ const Description = (props: Object) => {
 	return(
 		<div>
 			<h2 className="about-title"> About </h2>
-			<div className="about-description"> {ABOUT_ME.DESCRIPTION } </div>
+			<div className="about-description"> 
+				{ ABOUT_ME.DESCRIPTION.INTRO } 
+				<br /><br />
+				{ ABOUT_ME.DESCRIPTION.GENERAL }
+				<br /><br />
+				{ ABOUT_ME.DESCRIPTION.ME }
+			</div>
 		</div>
 	);
 };
@@ -29,7 +35,7 @@ const Description = (props: Object) => {
 const Languages = (props: Object) => {
 	return(
 		<div>
-			<h2 className="about-title"> This guy speaks </h2>
+			<h2 className="about-title"> Languages </h2>
 			{props.content.map( (lang, i) => (
 				<div key={i} className="about-tag">
 					<span> { lang.emoji } </span>

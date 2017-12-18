@@ -26,18 +26,16 @@
 
 .about-description {
     height: 100%;
-    font-weight: 200;
-    padding: 3px;
+    font-weight: 300;
+    padding: 3px 50px 3px 3px;
     word-wrap: break-word;
 
     /* animation: slideInUp 1s forwards;
     animation-delay: .5s; */
 }
 
-/* @media screen and (max-width: 768px) {
-    .about-tag {
-        background-color: transparent;
-        border: 1px solid white;
-        color: white;
+@media screen and (max-width: 768px) {
+    .about-description {
+        padding: 3px 15px 3px 3px;
     }
-} */
+}
