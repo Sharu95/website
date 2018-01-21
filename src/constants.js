@@ -8,7 +8,6 @@ export const CATEGORIES = {
 export const CONSTANTS = {
     LINKEDIN: "https://www.linkedin.com/in/sharanankulam/",
     GITHUB: "https://github.com/Sharu95",
-    EMAIL: "mailto:developersharu@gmail.com",
     TWITTER: "https://twitter.com/_sharu20",
     DEFAULT_LANDING: CATEGORIES.PROJECTS,
 };
@@ -19,7 +18,7 @@ export type Project = {
     image: string,
     demo: string,
     source: string,
-    tag: string, 
+    tag: string,
 };
 
 
@@ -64,14 +63,14 @@ export const PROJECTS: Array<Project> = [
 export const ABOUT_ME = {
     TITLE: "Student, Software Engineer & thinker",
     DESCRIPTION: {
-        INTRO: 
+        INTRO:
         "I am a Computer Science student based in Norway, who studies at University of Oslo.\
         I have a general passion for technology, technological innovation and overall anything\
         that relates to tech! Within the field of Computer Science, I've found Artificial Intelligence\
         to be interesting (hence my choice of master thesis within AI), after taking courses at\
         the university. I also like design, should it be algorithm design, web design or design\
         related to art, so that is also an interest of mine.",
-        GENERAL: 
+        GENERAL:
         "In addition to my full-time studies, I also work part-time as a Customer Service Agent. Freetime\
         outside of this is often used to acquire new knowledge, like software frameworks, languages\
         or tools. I also like playing futsal, hiking, skiing, gaming and non-fictional reading",
@@ -82,11 +81,11 @@ export const ABOUT_ME = {
         waking up earlier (to possibly get in more frequent morning runs! :)), which I'm not exceptionally\
         good at.",
     },
-    TECH_SKILLS: 
+    TECH_SKILLS:
         [ "Python", "Java", "C", "Javascript", "Common Lisp", "Scheme", "React", "HTML", "CSS", "Node", ],
     INTERESTS:
         [ "AI", "Functional paradigm", "Hiking", "Skiing", "Design", "Web design", "Technology", "Reading", "Futsal", ],
-    SPEAKS: [ 
+    SPEAKS: [
         {
             "emoji": "🇳🇴",
             "language": "Norwegian",

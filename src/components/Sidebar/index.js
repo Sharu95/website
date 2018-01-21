@@ -39,7 +39,6 @@ class Sidebar extends Component<Props, *> {
           <LinkOption link={CONSTANTS.LINKEDIN} icon="fa-linkedin" />
           <LinkOption link={CONSTANTS.GITHUB} icon="fa-github" />
           <LinkOption link={CONSTANTS.TWITTER} icon="fa-twitter" />
-          <LinkOption link={CONSTANTS.EMAIL} icon="fa-envelope" />
         </div>
       </div>
     );
