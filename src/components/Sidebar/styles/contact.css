@@ -6,15 +6,31 @@
     height: 20%;
 }
 
-.sidebar-option-contact-item {
-    padding: 0.5rem 0.65rem 0.5rem 0.65rem;
-    border-radius: 100%;
-    color: white;
-    /* transition: color 0.3s ease-in-out; */
+/* Used for feather icons */
+.feather-icon {
+    padding: 0.7rem;
+    transition: color 1s; 
+    color: white; 
 }
 
-.sidebar-option-contact-item:hover {
-    background: linear-gradient(to right, #FF5C00 15%, #FFC159 100%);
+/* Used for feather icons */
+.feather-linkedin:hover {
+    color: #0077B5;
+}
+
+/* Used for feather icons */
+.feather-github:hover {
+    color: #6E5494;
+}
+
+/* Used for feather icons */
+.feather-twitter:hover {
+    color: #00ACED;
+}
+
+/* Used for feather icons */
+.feather-bookmark:hover {
+    color: #1AA77D;
 }
 
 /* Tablets */

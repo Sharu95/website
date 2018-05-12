@@ -9,6 +9,7 @@ export const CONSTANTS = {
     LINKEDIN: "https://www.linkedin.com/in/sharanankulam/",
     GITHUB: "https://github.com/Sharu95",
     TWITTER: "https://twitter.com/_sharu20",
+    MEDIUM: "https://medium.com/@developersharu",
     DEFAULT_LANDING: CATEGORIES.PROJECTS,
 };
 

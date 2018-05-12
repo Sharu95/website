@@ -9,11 +9,11 @@ import { CONSTANTS, CATEGORIES } from "../../constants.js";
 import { MenuButton, Categories } from '../Menu';
 
 const LinkOption = (props: Object) => {
-  return (
-    <a className="sidebar-option-contact-item" href={props.link}>
-      <i className={`fa fa-2x ` + props.icon} aria-hidden="true" />
-    </a>
-  );
+    return(
+      <a className={"feather-icon feather-"+props.icon} href={props.link}>
+        <i data-feather={props.icon} aria-hidden="true" />
+      </a>
+    );
 };
 
 type Props = {
@@ -36,10 +36,12 @@ class Sidebar extends Component<Props, *> {
         </div>
 
         <div className="sidebar-options-contact-container">
-          <LinkOption link={CONSTANTS.LINKEDIN} icon="fa-linkedin" />
-          <LinkOption link={CONSTANTS.GITHUB} icon="fa-github" />
-          <LinkOption link={CONSTANTS.TWITTER} icon="fa-twitter" />
+          <LinkOption link={CONSTANTS.LINKEDIN} icon="linkedin" />
+          <LinkOption link={CONSTANTS.GITHUB} icon="github" />
+          <LinkOption link={CONSTANTS.TWITTER} icon="twitter" />
+          <LinkOption link={CONSTANTS.MEDIUM} icon="bookmark" />          
         </div>
+
       </div>
     );
   }
