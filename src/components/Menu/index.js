@@ -16,15 +16,15 @@ export function Categories (props: Object) {
    <div>
       <Option
         selected={props.selected(CATEGORIES.PROJECTS)}
-        title="Projects"
+        title={CATEGORIES.TITLE.PROJECTS}
       />
       <Option
         selected={props.selected(CATEGORIES.BLOG)}
-        title="Blog"
+        title={CATEGORIES.TITLE.BLOG}
       />
       <Option
         selected={props.selected(CATEGORIES.ABOUT)}
-        title="About Me"
+        title={CATEGORIES.TITLE.ABOUT}
       />
     </div>
   );

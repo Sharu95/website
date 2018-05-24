@@ -3,6 +3,12 @@ export const CATEGORIES = {
     PROJECTS: 'projects',
     BLOG: 'blog',
     ABOUT: 'about',
+    
+    TITLE: {
+        PROJECTS: 'Projects',
+        BLOG: 'Blog',
+        ABOUT: 'About me'
+    }
 };
 
 export const CONSTANTS = {
