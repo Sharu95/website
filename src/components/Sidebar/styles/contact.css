@@ -8,27 +8,30 @@
 
 /* Used for feather icons */
 .feather-icon {
-    padding: 0.7rem;
-    transition: color 1s; 
-    color: white; 
+    padding: 0.5rem;
+    color: white;
 }
 
 /* Used for feather icons */
+.feather-linkedin { transition: color 0.5s; }
 .feather-linkedin:hover {
     color: #0077B5;
 }
 
 /* Used for feather icons */
+.feather-github { transition: color 0.5s; }
 .feather-github:hover {
     color: #6E5494;
 }
 
 /* Used for feather icons */
+.feather-twitter { transition: color 0.5s; }
 .feather-twitter:hover {
     color: #00ACED;
 }
 
 /* Used for feather icons */
+.feather-bookmark { transition: color 0.5s; }
 .feather-bookmark:hover {
     color: #1AA77D;
 }

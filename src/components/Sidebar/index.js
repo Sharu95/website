@@ -10,7 +10,7 @@ import { MenuButton, Categories } from '../Menu';
 
 const LinkOption = (props: Object) => {
     return(
-      <a className={"feather-icon feather-"+props.icon} href={props.link}>
+      <a className="feather-icon" href={props.link}>
         <i data-feather={props.icon} aria-hidden="true" />
       </a>
     );
