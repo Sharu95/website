@@ -10,14 +10,14 @@
 
 .menu-option:hover {
     overflow: hidden;
-    animation: on-option-hover 0.5s forwards; 
+    animation: on-option-hover 0.5s forwards;
     cursor: pointer;
 }
 
 @keyframes on-option-hover {
     to {
-        background-color: rgba(255,255,255, 0.3);
-        padding-left: 1.5rem;     
+        color: #00EDED;
+        padding-left: 1.7rem;
     }
 }
 
