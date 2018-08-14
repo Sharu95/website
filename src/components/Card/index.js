@@ -11,9 +11,14 @@ type Props = {
 
 class Card extends Component<Props, *> {
   openLink = (link: string) => () => {
-    if (link !== "/") {
+    
+    if (!link) {
+      alert("This is not available or public yet :)")
+    }
+    else if (link !== "/") {
       window.open(link);
-    } else {
+    } 
+    else {
       window.location.reload(true);
     }
   };
@@ -30,24 +35,26 @@ class Card extends Component<Props, *> {
 			styles.animationDelay = "";
 		}
 
+    const { title, tag, description, source, demo } = this.props.content;
+
     return (
       <div className="card-item" style={styles}>
         <div className="card-title card-header">
-          <span> {this.props.content.title} </span>
-          <span className="card-tag"> {this.props.content.tag} </span>
+          <span> {title} </span>
+          <span className="card-tag"> {tag} </span>
           <section className="card-description">
-            {this.props.content.description}
+            {description}
 
             <div className="card-buttons">
               <div
-                onClick={this.openLink(this.props.content.source)}
+                onClick={this.openLink(source)}
                 className="card-button"
               >
                 {" "}
                 View source{" "}
               </div>
               <div
-                onClick={this.openLink(this.props.content.demo)}
+                onClick={this.openLink(demo)}
                 className="card-button"
               >
                 {" "}

@@ -34,6 +34,14 @@ export const ROOT = window.location.href;
 
 export const PROJECTS: Array<Project> = [
     {
+        title: "Smart Mirror",
+        description: "Inspired by the MagicMirror OSS project and Max Braun's (Google X) smart mirror implementation, I wanted to learn some new technologies and implement one myself.",
+        image: "/images/smart_mirror.png",
+        demo: "https://sharu95.github.io/smart-mirror",
+        source: "",
+        tag: "Javascript",
+    },
+    {
         title: "Github website",
         description: "Diving further into react, to be able to understand the technical aspects of the framework, and lifecycles. After this, I think Redux would be good to look at.",
         image: "/images/website.jpg",
