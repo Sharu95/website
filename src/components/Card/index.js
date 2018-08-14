@@ -9,6 +9,14 @@ type Props = {
   delay: number
 };
 
+const CardButton = ({ handler, url, text }) => (
+  <div
+    onClick={handler(url)}
+    className="card-button">
+    {text}
+  </div>
+)
+
 class Card extends Component<Props, *> {
   openLink = (link: string) => () => {
     
@@ -46,20 +54,8 @@ class Card extends Component<Props, *> {
             {description}
 
             <div className="card-buttons">
-              <div
-                onClick={this.openLink(source)}
-                className="card-button"
-              >
-                {" "}
-                View source{" "}
-              </div>
-              <div
-                onClick={this.openLink(demo)}
-                className="card-button"
-              >
-                {" "}
-                Demo{" "}
-              </div>
+              <CardButton handler={this.openLink} url={source} text="View source"/>
+              <CardButton handler={this.openLink} url={demo} text="Demo"/>
             </div>
           </section>
         </div>
