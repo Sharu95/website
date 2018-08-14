@@ -102,7 +102,7 @@ export const ABOUT_ME = {
         to be able to have similar opportunities as I've had so far in life."
     },
     TECH_SKILLS:
-        [ "Python", "Java", "C", "Javascript", "Common Lisp", "Scheme", "React", "HTML", "CSS", "Node", ],
+        [ "Python", "Java", "C", "R", "Javascript", "Common Lisp", "Scheme", "React", "HTML", "CSS", "Node", "Django", "MongoDB", "Flask", "Git"],
     INTERESTS:
         [ "AI", "AGI", "Functional paradigm", "Hiking", "Research", "Skiing", "Design", "Web design", "Technology", "Reading", "Futsal", ],
     SPEAKS: [
