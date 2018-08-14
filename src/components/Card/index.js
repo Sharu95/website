@@ -49,7 +49,13 @@ class Card extends Component<Props, *> {
       <div className="card-item" style={styles}>
         <div className="card-title card-header">
           <span> {title} </span>
-          <span className="card-tag"> {tag} </span>
+          
+          <div className="technologies">
+            {tag.map(x => (
+              <span className="card-tag">{x}</span>
+            ))}
+          </div>
+
           <section className="card-description">
             {description}
 

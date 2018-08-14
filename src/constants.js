@@ -25,7 +25,7 @@ export type Project = {
     image: string,
     demo: string,
     source: string,
-    tag: string,
+    tag: Array<string>,
 };
 
 
@@ -39,7 +39,7 @@ export const PROJECTS: Array<Project> = [
         image: "/images/smart_mirror.png",
         demo: "https://sharu95.github.io/smart-mirror",
         source: "",
-        tag: "Javascript",
+        tag: ["React", "Redux"],
     },
     {
         title: "Github website",
@@ -47,7 +47,7 @@ export const PROJECTS: Array<Project> = [
         image: "/images/website.jpg",
         demo: "/",
         source: "https://github.com/Sharu95/website",
-        tag: "React",
+        tag: ["React"],
     },
     {
         title: "Currencies",
@@ -55,7 +55,7 @@ export const PROJECTS: Array<Project> = [
         image: "/images/currencies.jpg",
         demo: "https://sharu95.github.io/currencies/",
         source: "https://github.com/Sharu95/currencies",
-        tag: "React",
+        tag: ["React"],
     },
     {
         title: "Kithe",
@@ -63,7 +63,7 @@ export const PROJECTS: Array<Project> = [
         image: "/images/kithe.png",
         demo: "https://riat.io/kithe_app.html",
         source: "https://github.com/Sharu95/Kithe",
-        tag: "Android",
+        tag: ["Android", "Java"],
     },
     {
         title: "Converter",
@@ -71,7 +71,7 @@ export const PROJECTS: Array<Project> = [
         image: "/images/converter.jpg",
         demo: "https://sharu95.github.io/converter",
         source: "https://github.com/Sharu95/converter",
-        tag: "Javascript",
+        tag: ["JQuery"],
     },
 ];
 
