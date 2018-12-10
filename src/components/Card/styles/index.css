@@ -103,7 +103,6 @@
     .card-header {
         height: 270px;
         transform: translateY(230px) translateZ(0);
-        display: inline-block;
     }
 
     .card-title:hover {
@@ -112,5 +111,12 @@
 
     .card-description {
         padding-top: .7rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .card-item {
+        height: 210px;
+        width: 90%;
     }
 }
