@@ -41,6 +41,14 @@
     /* background-color:green;  */
 }
 
+.card-tags {
+    float: right;
+}
+
+.card-tag {
+    margin-left: 3px;
+}
+
 .card-description {
     height: 100px;
     font-size: 0.9rem;

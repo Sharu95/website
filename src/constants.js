@@ -39,6 +39,7 @@ export const PROJECTS: Array<Project> = [
         image: "/images/smart_mirror.png",
         demo: "https://sharu95.github.io/smart-mirror",
         source: "",
+        tag: ["react", "redux", "python"]
     },
     {
         title: "Github website",
@@ -46,6 +47,7 @@ export const PROJECTS: Array<Project> = [
         image: "/images/website.jpg",
         demo: "/",
         source: "https://github.com/Sharu95/website",
+        tag: ["react"]
     },
     {
         title: "Currencies",
@@ -53,6 +55,7 @@ export const PROJECTS: Array<Project> = [
         image: "/images/currencies.jpg",
         demo: "https://sharu95.github.io/currencies/",
         source: "https://github.com/Sharu95/currencies",
+        tag: ["react"]
     },
     {
         title: "Kithe",
@@ -60,6 +63,7 @@ export const PROJECTS: Array<Project> = [
         image: "/images/kithe.png",
         demo: "https://riat.io/kithe_app.html",
         source: "https://github.com/Sharu95/Kithe",
+        tag: ["android"]
     },
     {
         title: "Converter",
@@ -67,6 +71,7 @@ export const PROJECTS: Array<Project> = [
         image: "/images/converter.jpg",
         demo: "https://sharu95.github.io/converter",
         source: "https://github.com/Sharu95/converter",
+        tag: ["js"]
     },
 ];
 

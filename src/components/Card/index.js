@@ -43,14 +43,19 @@ class Card extends Component<Props, *> {
 			styles.animationDelay = "";
 		}
 
-    const { title, description, source, demo } = this.props.content;
-
+    const { title, tag, description, source, demo } = this.props.content;
+    console.log(tag)
     return (
       <div className="card-item" style={styles}>
         
         <div className="card-content">
-          <div className="card-title">{title}</div>
-
+          <div className="card-title">
+            {title}
+            <span className="card-tags">
+              {tag.map( tagName => (<img className="card-tag" src={`/icons/${tagName}.svg`} /> ))}
+            </span>
+          </div>
+          
           <div className="card-description">
             <span>{description}</span>
           </div>
