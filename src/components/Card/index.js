@@ -43,28 +43,25 @@ class Card extends Component<Props, *> {
 			styles.animationDelay = "";
 		}
 
-    const { title, tag, description, source, demo } = this.props.content;
+    const { title, description, source, demo } = this.props.content;
 
     return (
       <div className="card-item" style={styles}>
-        <div className="card-title card-header">
-          <span> {title} </span>
-          
-          <div className="technologies">
-            {tag.map(x => (
-              <span className="card-tag">{x}</span>
-            ))}
+        
+        <div className="card-content">
+          <div className="card-title">{title}</div>
+
+          <div className="card-description">
+            <span>{description}</span>
           </div>
-
-          <section className="card-description">
-            {description}
-
-            <div className="card-buttons">
-              <CardButton handler={this.openLink} url={source} text="View source"/>
-              <CardButton handler={this.openLink} url={demo} text="Demo"/>
-            </div>
-          </section>
+          
+          <div className="card-buttons">
+            <CardButton handler={this.openLink} url={source} text="View source"/>
+            <CardButton handler={this.openLink} url={demo} text="Demo"/>
+          </div>
+          
         </div>
+
       </div>
     );
   }
